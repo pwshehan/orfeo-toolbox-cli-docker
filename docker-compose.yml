@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  otb:
+    image: orfeotoolbox/otb:latest
+    container_name: otb_container
+    volumes:
+      - ./data:/data
+    stdin_open: true
+    tty: true
